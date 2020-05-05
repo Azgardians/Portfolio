@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -44,7 +44,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #e9a80b;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out;
@@ -52,7 +52,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #F4B41A;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -61,15 +61,15 @@
       width: 300px;
       height: 300px;
       background: url(../images/Image-small.jpeg);
-      border-radius: 20%;
-      border: solid 3px #1aee25; }
+      border-radius: 50%;
+      border: solid 3px #143D59; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #1aee25; }
+      color: #143D59; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,11 +77,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #1aee25; }
+      color: #143D59; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -99,8 +99,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #F4B41A;
+  color: #000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -118,7 +118,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(244, 180, 26, 0.9); }
 
 h1,
 h2,
@@ -134,7 +134,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(244, 183, 36, 0.5); }
 
 a {
   color: #fff;
@@ -146,7 +146,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #1aee25; }
+  color: #143D59; }
 
 main {
   padding: 4rem;
@@ -156,7 +156,7 @@ main {
     main .icons a {
       padding: 1rem; }
       main .icons a:hover {
-        color: #1aee25;
+        color: #143D59;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -172,7 +172,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 20%;
-    border: #1aee25 3px solid; }
+    border: #143D59 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -183,9 +183,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #f5bc32;
     padding: 0.5rem;
-    border-bottom: #1aee25 5px solid; }
+    border-bottom: #143D59 5px solid; }
 
 .projects {
   display: grid;
@@ -197,7 +197,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #1aee25;
+      border-color: #143D59;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -206,43 +206,42 @@ main {
   border: 0;
   padding: 0.5rem 1rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #1aee25;
-    color: set-color-text(#1aee25);
+    background: #143D59;
+    color: set-color-text(#143D59);
     transition: all 0.5s ease-out; }
 
 .btn-dark {
-  background: black;
+  background: #0e0a01;
   color: #fff; }
   .btn-dark:hover {
     color: black; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: white;
   color: #333; }
 
 .contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
   text-align: center; }
   .contact div {
     margin-top: 1rem;
     padding: 1.5rem 2.5rem;
-    border: 3px #fff solid;
+    border: 3px #333 solid;
     transition: all 0.5s ease-out; }
     .contact div:hover {
-      background: #1aee25;
-      padding: 0.5rem 1.5rem;
-      color: #000; }
+      background: #143D59;
+      padding: 1.5rem 1.5rem;
+      border: 3px #fff solid; }
       .contact div:hover span {
-        color: black; }
-      .contact div:hover p {
-        color: black; }
+        color: #fff; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #0b202f;
   color: #fff;
   height: 60px; }
 
