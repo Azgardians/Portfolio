@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -44,7 +44,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #e9a80b;
+    background: #0f2f44;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out;
@@ -52,7 +52,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #F4B41A;
+    background: #143D59;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -62,14 +62,14 @@
       height: 300px;
       background: url(../images/Image-small.jpeg);
       border-radius: 50%;
-      border: solid 3px #143D59; }
+      border: solid 3px #F4B41A; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #143D59; }
+      color: #F4B41A; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,11 +77,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #143D59; }
+      color: #F4B41A; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -99,14 +99,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #F4B41A;
-  color: #000;
+  background: #143D59;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-image {
-    background: url(../images/background.jpeg);
+    background: url(../images/background_blue.webp);
     transform: scaleX();
     background-attachment: fixed;
     background-size: cover; }
@@ -118,7 +118,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(244, 180, 26, 0.9); }
+      background: rgba(20, 61, 89, 0.9); }
 
 h1,
 h2,
@@ -134,7 +134,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(244, 183, 36, 0.5); }
+    background: rgba(22, 67, 97, 0.5); }
 
 a {
   color: #fff;
@@ -146,7 +146,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #143D59; }
+  color: #F4B41A; }
 
 main {
   padding: 4rem;
@@ -156,7 +156,7 @@ main {
     main .icons a {
       padding: 1rem; }
       main .icons a:hover {
-        color: #143D59;
+        color: #F4B41A;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -172,7 +172,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 20%;
-    border: #143D59 3px solid; }
+    border: #F4B41A 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -183,9 +183,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #f5bc32;
+    background: #194b6e;
     padding: 0.5rem;
-    border-bottom: #143D59 5px solid; }
+    border-bottom: #F4B41A 5px solid; }
 
 .projects {
   display: grid;
@@ -197,7 +197,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #143D59;
+      border-color: #F4B41A;
       transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -206,24 +206,24 @@ main {
   border: 0;
   padding: 0.5rem 1rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #143D59;
-    color: set-color-text(#143D59);
+    background: #F4B41A;
+    color: set-color-text(#F4B41A);
     transition: all 0.5s ease-out; }
 
 .btn-dark {
-  background: #0e0a01;
+  background: black;
   color: #fff; }
   .btn-dark:hover {
     color: black; }
 
 .btn-light {
-  background: white;
+  background: #88bfe4;
   color: #333; }
 
 .contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1.5rem;
   text-align: center; }
   .contact div {
@@ -232,17 +232,17 @@ main {
     border: 3px #333 solid;
     transition: all 0.5s ease-out; }
     .contact div:hover {
-      background: #143D59;
+      background: #F4B41A;
       padding: 1.5rem 1.5rem;
       border: 3px #fff solid; }
       .contact div:hover span {
-        color: #fff; }
+        color: #000; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #0b202f;
-  color: #fff;
+  background: #d1970a;
+  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
