@@ -167,11 +167,11 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'bioimage bio bio' 'job3 job2 job1 '; }
+  grid-template-areas: 'bioimage bio bio' 'job3 job2 job2 '; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 20%;
+    border-radius: 50%;
     border: #F4B41A 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -179,7 +179,13 @@ main {
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace; }
+    .about-info .job-2 h2, .about-info .job-2 h3 {
+      margin: 20px 0; }
+    .about-info .job-2 p {
+      font-size: 16px; }
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
@@ -200,25 +206,32 @@ main {
       border-color: #F4B41A;
       transition: all 0.5s ease-out; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-disable {
   display: block;
   margin-bottom: 0.2rem;
   border: 0;
   padding: 0.5rem 1rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #F4B41A;
-    color: set-color-text(#F4B41A);
-    transition: all 0.5s ease-out; }
 
 .btn-dark {
   background: black;
   color: #fff; }
   .btn-dark:hover {
-    color: black; }
+    background: #F4B41A;
+    color: black;
+    transition: all 0.5s ease-out; }
 
 .btn-light {
   background: #88bfe4;
   color: #333; }
+  .btn-light:hover {
+    background: #F4B41A;
+    color: set-color-text(#F4B41A);
+    transition: all 0.5s ease-out; }
+
+.btn-disable {
+  background-color: #333; }
+  .btn-disable:hover {
+    pointer-events: none; }
 
 .contact {
   display: flex;
@@ -247,11 +260,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   #home {
