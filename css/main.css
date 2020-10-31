@@ -231,7 +231,7 @@ main {
 .btn-disable {
   background-color: #333; }
   .btn-disable:hover {
-    pointer-events: none; }
+    cursor: not-allowed; }
 
 .contact {
   display: flex;
