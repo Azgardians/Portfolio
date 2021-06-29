@@ -167,7 +167,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 'bioimage bio bio' 'job3 job2 job2 '; }
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3 '; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -187,10 +187,16 @@ main {
     .about-info .job-2 p {
       font-size: 16px; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace; }
+    .about-info .job-3 h2, .about-info .job-3 h3 {
+      margin: 20px 0; }
+    .about-info .job-3 p {
+      font-size: 16px; }
   .about-info .job {
     background: #194b6e;
-    padding: 0.5rem;
+    padding: 2.5rem;
     border-bottom: #F4B41A 5px solid; }
 
 .projects {
